@@ -1,0 +1,4 @@
+method in Java returns a Comparator
+that  imposes reverse order of a passed Comparator object.
+We can use this method to sort any list or any other collection in
+reverse order of user defined Comparator
