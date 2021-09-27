@@ -24,3 +24,17 @@ Deploy Run the application:
     - Execute the below java command to run the application.
         java -cp <path to the jar file which is copied in above step> com.filesearch.app.WordSearchApplication <valid path to the directory of text files>
     - To come out of the application type :quit against the search command.
+
+Example:
+$ java -jar SimpleSearch.jar Searcher /foo/bar
+14 files read in directory /foo/bar
+search> to be or not to be
+file1.txt:100%
+file2.txt:90%
+search>
+search> cats
+no matches found
+search> :quit
+$
+The search takes the words given on the prompt and return a list of the top 10 (maximum)
+matching filenames in rank order, giving the rank score against each match(rank is given according to the number of words in the phrase that are matched).
